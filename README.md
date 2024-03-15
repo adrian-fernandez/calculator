@@ -44,7 +44,7 @@ $ curl -s -w '\nstatus:%{http_code}' -H "Authorization: Bearer <TOKEN>" http://l
 status:200%
 ```
 
-It returns `payload` with the result, `valid` as a boolean to indicate if the operation was successful, and the 200 status code:
+It returns `result` with the result, `expression` with the expression requested by user and status 200
 
 Example of an invalid request
 ```
