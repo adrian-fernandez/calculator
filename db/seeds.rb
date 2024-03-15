@@ -11,6 +11,6 @@ Doorkeeper::AccessToken.create(
   expires_in: 1.month.to_i
 )
 
-Rails.logger.debug do
-  "Created sample user with token #{Doorkeeper::AccessToken.first.token}"
-end
+# rubocop:disable Rails/Output
+puts "Created sample user with token #{Doorkeeper::AccessToken.first.token}"
+# rubocop:enable Rails/Output
