@@ -1,0 +1,36 @@
+version: "3.4"
+
+x-app: &app
+  platform: linux/amd64
+  stdin_open: true
+  tty: true
+
+services:
+  moqo_redis:
+    image: redis:6.2.13-alpine
+    restart: always
+    ports:
+      - 6379:6379
+    networks:
+      - moqo
+    volumes:
+      - moqo_redis:/data:delegated
+
+  moqo_redis_security:
+    image: redis:6.2.13-alpine
+    restart: always
+    command: --port 63791
+    ports:
+      - 63791:63791
+    networks:
+      - moqo
+    volumes:
+      - moqo_redis_security:/data:delegated
+
+volumes:
+  moqo_redis:
+  moqo_redis_security:
+
+networks:
+  moqo:
+    driver: bridge

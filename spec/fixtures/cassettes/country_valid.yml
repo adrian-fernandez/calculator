@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.familysearch.org/service/home/discovery/api/v1/quick-search/search/surname?q.surname=Fernandez
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/122.0.0.0 Safari/537.36
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      connection:
+      - keep-alive
+      date:
+      - Sun, 10 Mar 2024 18:03:07 GMT
+      server:
+      - nginx
+      vary:
+      - Accept-Encoding
+      x-powered-by:
+      - Express
+      via:
+      - 1.1 e6ef5f6c0f7ed77c246ff0c3d84e15fa.cloudfront.net (CloudFront)
+      content-security-policy:
+      - frame-ancestors 'self' https://*.familysearch.org https://*.familysearch.psdops.com
+        https://*.church.brightspot.cloud
+      x-frame-options:
+      - SAMEORIGIN
+      x-cache:
+      - Miss from cloudfront
+      x-amz-cf-pop:
+      - BCN50-P2
+      x-amz-cf-id:
+      - 9UjvVEhXzrqIffxArHCpAxUHlFERnrDwbCGWI9opOP1xVTvuNhSHag==
+      set-cookie:
+      - visid_incap_2852034=WPTG2wpTRYuscGu88Gzp7dv17WUAAAAAQUIPAAAAAACCuqUmpjJqbWx2WInPuf82;
+        expires=Sun, 09 Mar 2025 22:46:27 GMT; HttpOnly; path=/; Domain=.familysearch.org,
+        nlbi_2852034=ugB9aj85twPOaN9MFzy7qAAAAABhLnaLPiNHJirdUvQjOYKH; path=/; Domain=.familysearch.org,
+        incap_ses_1776_2852034=DHv0c9v+t1ylo7ttrp6lGNv17WUAAAAAwmpdVYfWNbcxll41QNpLjA==;
+        path=/; Domain=.familysearch.org
+      x-cdn:
+      - Imperva
+      content-encoding:
+      - gzip
+      transfer-encoding:
+      - chunked
+      x-iinfo:
+      - 4-11781005-11780717 PNYN RT(1710093787072 30) q(0 0 0 -1) r(1 1) U24
+    body:
+      encoding: UTF-8
+      string: '{"criteria":{"q.surname":"Fernandez"},"surname":{"error":false,"countries":[{"name":"Spain","code":"ESP","count":155455},{"name":"Mexico","code":"MEX","count":47342},{"name":"Argentina","code":"ARG","count":36607}],"count":656159,"htmlDefinition":"<p>Some characteristic forenames:  Spanish Jose, Manuel, Juan, Carlos, Luis, Jorge, Miguel, Fernando, Mario, Jesus, Pedro, Francisco.  Portuguese Ligia, Joao, Armanda, Godofredo, Wenceslao.</p><p>Spanish (<b>Fernández</b>): patronymic from the personal name   Fernando  . The surname (and to a lesser extent the variant   Hernandez  ) has also been established in southern Italy, mainly in Naples and Palermo, since the period of Spanish dominance there.</p><p>Jewish (Sephardic): adoption of the name in 1 above at the moment of conversion to Roman Catholicism. After the return to Judaism (generations later), some Jewish descendants retained the surname that their families had adopted as Roman Catholics.</p>","attribution":"Dictionary of American Family Names © Patrick Hanks 2003, 2006.","attributionURL":"https://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780199656431.001.0001/oxfordhb-9780199656431-e-9","variants":["Fernando"]}}'
+  recorded_at: Sun, 10 Mar 2024 18:03:07 GMT
+recorded_with: VCR 6.1.0

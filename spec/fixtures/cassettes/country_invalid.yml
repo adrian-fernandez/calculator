@@ -1,0 +1,126 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.familysearch.org/service/home/discovery/api/v1/quick-search/search/surname?q.surname=dummy
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/122.0.0.0 Safari/537.36
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 403
+      message: OK
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      connection:
+      - keep-alive
+      date:
+      - Sun, 10 Mar 2024 18:03:07 GMT
+      server:
+      - nginx
+      vary:
+      - Accept-Encoding
+      x-powered-by:
+      - Express
+      via:
+      - 1.1 e6ef5f6c0f7ed77c246ff0c3d84e15fa.cloudfront.net (CloudFront)
+      content-security-policy:
+      - frame-ancestors 'self' https://*.familysearch.org https://*.familysearch.psdops.com
+        https://*.church.brightspot.cloud
+      x-frame-options:
+      - SAMEORIGIN
+      x-cache:
+      - Miss from cloudfront
+      x-amz-cf-pop:
+      - BCN50-P2
+      x-amz-cf-id:
+      - 9UjvVEhXzrqIffxArHCpAxUHlFERnrDwbCGWI9opOP1xVTvuNhSHag==
+      set-cookie:
+      - visid_incap_2852034=WPTG2wpTRYuscGu88Gzp7dv17WUAAAAAQUIPAAAAAACCuqUmpjJqbWx2WInPuf82;
+        expires=Sun, 09 Mar 2025 22:46:27 GMT; HttpOnly; path=/; Domain=.familysearch.org,
+        nlbi_2852034=ugB9aj85twPOaN9MFzy7qAAAAABhLnaLPiNHJirdUvQjOYKH; path=/; Domain=.familysearch.org,
+        incap_ses_1776_2852034=DHv0c9v+t1ylo7ttrp6lGNv17WUAAAAAwmpdVYfWNbcxll41QNpLjA==;
+        path=/; Domain=.familysearch.org
+      x-cdn:
+      - Imperva
+      content-encoding:
+      - gzip
+      transfer-encoding:
+      - chunked
+      x-iinfo:
+      - 4-11781005-11780717 PNYN RT(1710093787072 30) q(0 0 0 -1) r(1 1) U24
+    body:
+      encoding: UTF-8
+      string: '{"incidentId":"1776000100070060372-14726201728828075","hostName":"www.familysearch.org","errorCode":"12","description":"","timeUtc":"2024-03-10
+        18:06:05 UTC","clientIp":"666.666.666.666","proxyId":"1776-100","proxyIp":"666.666.666.666"}'
+  recorded_at: Sun, 10 Mar 2024 18:03:07 GMT
+- request:
+    method: get
+    uri: https://www.familysearch.org/service/home/discovery/api/v1/quick-search/search/surname?q.surname=dummy
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/122.0.0.0 Safari/537.36
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 403
+      message: OK
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      connection:
+      - keep-alive
+      date:
+      - Sun, 10 Mar 2024 18:26:28 GMT
+      server:
+      - nginx
+      vary:
+      - Accept-Encoding
+      x-powered-by:
+      - Express
+      via:
+      - 1.1 10a6624f4fad72aa8dec483940cdef8a.cloudfront.net (CloudFront)
+      content-security-policy:
+      - frame-ancestors 'self' https://*.familysearch.org https://*.familysearch.psdops.com
+        https://*.church.brightspot.cloud
+      x-frame-options:
+      - SAMEORIGIN
+      x-cache:
+      - Miss from cloudfront
+      x-amz-cf-pop:
+      - BCN50-P2
+      x-amz-cf-id:
+      - B00KvE0Vfklf9Uju97dnIJ1zn3XmuFb8xDUyWs5LpH0i6s9pj5yE3w==
+      set-cookie:
+      - visid_incap_2852034=QHcukyQETPy/axz5B19G81T77WUAAAAAQUIPAAAAAAA1RAPrXgsDr7AwTaliHivf;
+        expires=Sun, 09 Mar 2025 22:46:28 GMT; HttpOnly; path=/; Domain=.familysearch.org,
+        nlbi_2852034=vEtYcIAVaDG/VfmaFzy7qAAAAAAD8qr2WM0h7+CvF6cXwIHz; path=/; Domain=.familysearch.org,
+        incap_ses_1776_2852034=FhKGU9dZ82GwEL5trp6lGFT77WUAAAAAQzeTahZEVknV5ht57yMtJQ==;
+        path=/; Domain=.familysearch.org
+      x-cdn:
+      - Imperva
+      content-encoding:
+      - gzip
+      transfer-encoding:
+      - chunked
+      x-iinfo:
+      - 5-13212700-13212701 NNYY CT(0 2 0) RT(1710095188722 25) q(0 0 0 -1) r(2 2)
+        U24
+    body:
+      encoding: UTF-8
+      string: '{"incidentId":"1776000100070060372-14726201728828075","hostName":"www.familysearch.org","errorCode":"12","description":"","timeUtc":"2024-03-10
+        18:06:05 UTC","clientIp":"666.666.666.666","proxyId":"1776-100","proxyIp":"666.666.666.666"}'
+  recorded_at: Sun, 10 Mar 2024 18:26:28 GMT
+recorded_with: VCR 6.1.0
